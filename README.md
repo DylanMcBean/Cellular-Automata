@@ -1,0 +1,11 @@
+# Cellular Automata
+- To change the rule the cell is oporating on, change the movement varible in the main file.
+- [**R**] this will clear the screen, reset the cell, and give it a random rule to follow.
+- [**p**] will pause the cell in its current position
+- [**i**] will increment the cell by one space when paused
+- [**t**] will turn on/off shaders
+- [**s**] will take a screenshot of the window
+- [**m**] will start recording the window
+- Numbers [**0 - 9**] and Letters [**A - F**] will change the colour palette
+- to change the scale, change the scale varible in the data file. smaller scalling may slow it down, but a scalling of one will be faster than 2 because it draws the canvas in a different way
+- click the window at different location to change the speed ([**Vertical - FPS**, **Horizontal - Update Speed**])
