@@ -1,5 +1,5 @@
 # Cellular Automata
-- To change the rule the cell is oporating on, change the movement varible in the main file.
+- To change the rule the cell is operating on, change the movement varible in the main file.
 - [**R**] this will clear the screen, reset the cell, and give it a random rule to follow.
 - [**p**] will pause the cell in its current position
 - [**i**] will increment the cell by one space when paused
