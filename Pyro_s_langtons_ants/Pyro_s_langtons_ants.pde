@@ -23,8 +23,8 @@ color[] Colors;
 //                b/B - switches the state of current tile and moves backward
 
 String movement = "RUUUUUL"; //Edit the movement string with the avalible letters or leave blank for random
-
-/* cool patterns for reference
+int scale = 10;
+/* cool patterns for reference UUUUWRL - UUJULRJ - URVUL - URJ
  UUUSENUEUWSULE
  UUUUWRL
  UUJULRJ
@@ -62,9 +62,9 @@ Long
 RUUUUUL
  */
 void setup() {
-  //size(1000, 1000, P3D);
-  fullScreen(P3D,1);
-  frameRate(20); // idk
+  size(1000, 1000, P3D);
+  //fullScreen(P3D,1);
+  frameRate(40); // idk
 
   fx = new PostFX(this);
 
@@ -106,6 +106,6 @@ void draw() {
 }
 
 void mouseClicked() {
-  frameRate(map(mouseX, width, 0, 1, 250));
+  frameRate(map(mouseX, width, 0, 1, 120));
   updateSpeed = int(map(mouseY, height, 0, 100, 1));
 }

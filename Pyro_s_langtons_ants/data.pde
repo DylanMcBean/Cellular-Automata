@@ -5,7 +5,6 @@ int dir;
 
 // environment data
 int[][] grid;
-int scale = 10;
 PImage ant;
 int mem;
 int prev;

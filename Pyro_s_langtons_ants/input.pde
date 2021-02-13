@@ -4,6 +4,20 @@ void keyPressed() {
     reset(true);
     break;
     
+  case 'q':
+    reset(false);
+    break;
+    
+  case '+':
+    scale = min(20,scale+1);
+    reset(false);
+    break;
+    
+  case '-':
+    scale = max(1,scale-1);
+    reset(false);
+    break;
+    
   case 'p':
     updateSpeed *= -1;
     break;

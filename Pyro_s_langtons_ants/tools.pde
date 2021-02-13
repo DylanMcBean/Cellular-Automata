@@ -6,6 +6,7 @@ void reset(boolean generateRandom) {
   pal = pals[floor(random(pals.length))];
   grid = new int[width/scale][height/scale];
   ant = createImage(width, height, RGB);
+  fx = new PostFX(this);
   ant.loadPixels();
   mem = 0;
   prev = 0;
@@ -59,6 +60,7 @@ void generateRandomMovement() {
 }
 
 void printMovement() {
+  println("Scale: " + scale);
   println("Inputs:\n\tR - reset\n\tP - Pause\n\tI - Step\n\tT - Toggle Shaders\n\tS - Screenshot\n\tM - recording\n\t[0 - 9,A - E] - Color Scheme");
   print("Movement: ", movement);
   for (int i = 0; i < movement.length(); i ++) {
